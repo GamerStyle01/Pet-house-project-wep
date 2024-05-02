@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Model</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(226, 170, 222);
+    }
+
+    .column {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 40px;
+        column-gap: 80px;
+    }
+
+    .box {
+        background: #98d1fd;
+        width: 500px;
+        height: 800px;
+        position: relative;
+        top: -25px;
+        border-radius: 1cm;
+    }
+
+    .video {
+        width: 400px;
+        position: absolute;
+        top: 45px;
+        left: 50px;
+    }
+
+    .footerNav {
+        padding-top: 1px ;
+    }
+
+    .footerNav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .footerNav ul li a {
+        color: rgb(0, 0, 0);
+        margin: 0 20px;
+        font-size: 20px;
+    }
+
+</style>
+
+<body> 
+    
+    <div class="footerNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="model-video.html">Model</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>   
+        
+    </div>
+
+    <section class="column">
+
+        <div class="box">
+            <video class="video" controls>
+                <source src="video/01.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="box">
+            <video class="video" width="450px" controls autoplay loop>
+                <source src="video/02.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="box">
+            <video class="video" width="450px" controls>
+                <source src="video/03.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
